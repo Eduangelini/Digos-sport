@@ -10,31 +10,298 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Poppins:wght@100;400;600;700;800&display=swap"
     rel="stylesheet">
 
-  <!-- Adding CSS -->
-  <link rel="stylesheet" href="./styles.css/style.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./tailwind.css">
 
-  <!-- Adding fontAwesome -->
+  <!-- fontAwesome -->
   <script src="https://kit.fontawesome.com/c46e2ab208.js" crossorigin="anonymous"></script>
 
-  <!-- Adding TailWind CSS (CDN) -->
+  <!-- TailWind CSS (CDN) -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Adding Tailwind Config -->
-  <script src="./main.js/tailwind-config.js"></script>
+  <!-- Tailwind Config -->
+  <script src="./tailwind.config.js"></script>
 
   <title>Digo`s Sport</title>
 
 </head>
 
-<body>
+<body class="bg-slate-100">
 
+  <!-- HEADER START -->
+  <header class="">
+
+    <div class="header__nav flex justify-end m-5">
+      <a href="#"><i class="fa-solid fa-bars"></i></a>
+    </div>
+
+    <div class="header__hero flex justify-center gap-10 m-5">
+      <div class="left__content flex flex-col justify-center items-start w-6/12 gap-10">
+        <h1 class="font-extrabold text-4xl">Digo`s Sports</h1>
+        <p class="text-base">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti veritatis dignissimos
+          quos neque minima,
+          tempora, optio fugit voluptates odit aspernatur accusantium saepe accusamus autem eligendi. Recusandae nihil
+          reprehenderit quod maxime?</p>
+        <button class="border rounded-lg px-10 py-4 bg-green-600 text-white font-bold"><i
+            class="fa-brands fa-whatsapp pe-3 font-bold"></i>ENTRAR EM
+          CONTATO</button>
+      </div>
+      <div class="right__content flex">
+        <img src="./assets/hero-image.png" alt="" width="500px">
+      </div>
+    </div>
+
+    <section class="m-5">
+      <div class="border"></div>
+    </section>
+
+    <div class="flex flex-col">
+      <ul class="flex justify-center m-5 pb-3">
+        <i class="fa-brands fa-whatsapp flex items-center me-5 font-bold text-3xl"></i>
+        <li class="me-14 text-lg">
+          <p class="font-bold">Frete Grátis</p>
+          <p>Acima de R$XX,XX</p>
+        </li>
+        <i class="fa-brands fa-whatsapp flex items-center me-5 font-bold text-3xl"></i>
+        <li class="me-14 text-lg">
+          <p class="font-bold">Frete Grátis</p>
+          <p>Acima de R$XX,XX</p>
+        </li>
+        <i class="fa-brands fa-whatsapp flex items-center me-5 font-bold text-3xl"></i>
+        <li class="me-14 text-lg">
+          <p class="font-bold">Frete Grátis</p>
+          <p>Acima de R$XX,XX</p>
+        </li>
+        <i class="fa-brands fa-whatsapp flex items-center me-5 font-bold text-3xl"></i>
+        <li class="text-lg">
+          <p class="font-bold">Frete Grátis</p>
+          <p>Acima de R$XX,XX</p>
+        </li>
+      </ul>
+
+      <p class="flex justify-center font-bold text-white text-lg bg-slate-300">ENTRE EM CONTATO PARA MAIS INFORMAÇÕES
+      </p>
+
+    </div>
+  </header>
+  <!-- HEADER END -->
+
+  <!-- CATEGORIES SECTION START -->
+  <section class="main__categories flex justify-center items-center h-screen">
+    <div class="grid grid-cols-3 gap-4">
+      <div class="flex justify-center items-center">
+        <img src="./assets/1.png" alt="Imagem 1" class="w-11/12 h-auto rounded-lg">
+      </div>
+      <div class="flex justify-center items-center">
+        <img src="./assets/2.png" alt="Imagem 2" class="w-11/12 h-auto rounded-lg">
+      </div>
+      <div class="flex justify-center items-center">
+        <img src="./assets/3.png" alt="Imagem 3" class="w-11/12 h-auto rounded-lg">
+      </div>
+      <div class="flex justify-center items-center">
+        <img src="./assets/4.png" alt="Imagem 4" class="w-11/12 h-auto rounded-lg">
+      </div>
+      <div class="flex justify-center items-center">
+        <img src="./assets/5.png" alt="Imagem 5" class="w-11/12 h-auto rounded-lg">
+      </div>
+      <div class="flex justify-center items-center">
+        <img src="./assets/6.png" alt="Imagem 6" class="w-11/12 h-auto rounded-lg">
+      </div>
+      <div class="flex justify-center items-center">
+        <img src="./assets/7.png" alt="Imagem 7" class="w-11/12 h-auto rounded-lg">
+      </div>
+      <div class="flex justify-center items-center">
+        <img src="./assets/8.png" alt="Imagem 8" class="w-11/12 h-auto rounded-lg">
+      </div>
+      <div class="flex justify-center items-center">
+        <img src="./assets/9.png" alt="Imagem 9" class="w-11/12 h-auto rounded-lg">
+      </div>
+    </div>
+  </section>
+  <!-- CATEGORIES SECTION END -->
+
+  <!-- BRANDS AND PRODUCTS SECTION START -->
+  <section class="flex flex-col justify-center m-5">
+    <div class="flex justify-center items-center">
+      <div class="flex-grow border"></div>
+      <h2 class="m-5 font-bold text-3xl">PRINCIPAIS MARCAS</h2>
+      <div class="flex-grow border"></div>
+    </div>
+  </section>
+
+  <section class="main__categories flex justify-center items-center m-5">
+    <div class="flex">
+      <div class="flex justify-center items-center m-3">
+        <img src="./assets/1.png" alt="Imagem 1" class="w-auto h-auto rounded-lg">
+      </div>
+      <div class="flex justify-center items-center m-3">
+        <img src="./assets/2.png" alt="Imagem 2" class="w-auto h-auto rounded-lg">
+      </div>
+      <div class="flex justify-center items-center m-3">
+        <img src="./assets/3.png" alt="Imagem 3" class="w-auto h-auto rounded-lg">
+      </div>
+      <div class="flex justify-center items-center m-3">
+        <img src="./assets/4.png" alt="Imagem 4" class="w-auto h-auto rounded-lg">
+      </div>
+      <div class="flex justify-center items-center m-3">
+        <img src="./assets/5.png" alt="Imagem 5" class="w-auto h-auto rounded-lg">
+      </div>
+    </div>
+  </section>
+
+  <section class="flex flex-col justify-center m-5">
+    <div class="flex justify-center items-center">
+      <div class="flex-grow border"></div>
+      <h2 class="m-5 font-bold text-3xl">PRINCIPAIS PRODUTOS</h2>
+      <div class="flex-grow border"></div>
+    </div>
+  </section>
+
+  <section class="main__categories flex justify-center items-center m-5 mb-10">
+    <div class="grid grid-cols-4 gap-8 ">
+      <div class="flex flex-col justify-items-start bg-blue-100 p-4 rounded-lg">
+        <img src="./assets/1.png" alt="" class="rounded-lg mb-2">
+        <p class="font-bold text-2xl mb-2">Chuteira X</p>
+        <p class="font-bold text-2xl mb-6">Marca Y</p>
+        <button class="border rounded-lg px-10 py-4 bg-green-600 text-white font-bold">SAIBA MAIS</button>
+      </div>
+      <div class="flex flex-col justify-items-start bg-blue-100 p-4 rounded-lg">
+        <img src="./assets/1.png" alt="" class="rounded-lg mb-2">
+        <p class="font-bold text-2xl mb-2">Chuteira X</p>
+        <p class="font-bold text-2xl mb-6">Marca Y</p>
+        <button class="border rounded-lg px-10 py-4 bg-green-600 text-white font-bold">SAIBA MAIS</button>
+      </div>
+      <div class="flex flex-col justify-items-start bg-blue-100 p-4 rounded-lg">
+        <img src="./assets/1.png" alt="" class="rounded-lg mb-2">
+        <p class="font-bold text-2xl mb-2">Chuteira X</p>
+        <p class="font-bold text-2xl mb-6">Marca Y</p>
+        <button class="border rounded-lg px-10 py-4 bg-green-600 text-white font-bold">SAIBA MAIS</button>
+      </div>
+      <div class="flex flex-col justify-items-start bg-blue-100 p-4 rounded-lg">
+        <img src="./assets/1.png" alt="" class="rounded-lg mb-2">
+        <p class="font-bold text-2xl mb-2">Chuteira X</p>
+        <p class="font-bold text-2xl mb-6">Marca Y</p>
+        <button class="border rounded-lg px-10 py-4 bg-green-600 text-white font-bold">SAIBA MAIS</button>
+      </div>
+      <div class="flex flex-col justify-items-start bg-blue-100 p-4 rounded-lg">
+        <img src="./assets/1.png" alt="" class="rounded-lg mb-2">
+        <p class="font-bold text-2xl mb-2">Chuteira X</p>
+        <p class="font-bold text-2xl mb-6">Marca Y</p>
+        <button class="border rounded-lg px-10 py-4 bg-green-600 text-white font-bold">SAIBA MAIS</button>
+      </div>
+      <div class="flex flex-col justify-items-start bg-blue-100 p-4 rounded-lg">
+        <img src="./assets/1.png" alt="" class="rounded-lg mb-2">
+        <p class="font-bold text-2xl mb-2">Chuteira X</p>
+        <p class="font-bold text-2xl mb-6">Marca Y</p>
+        <button class="border rounded-lg px-10 py-4 bg-green-600 text-white font-bold">SAIBA MAIS</button>
+      </div>
+      <div class="flex flex-col justify-items-start bg-blue-100 p-4 rounded-lg">
+        <img src="./assets/1.png" alt="" class="rounded-lg mb-2">
+        <p class="font-bold text-2xl mb-2">Chuteira X</p>
+        <p class="font-bold text-2xl mb-6">Marca Y</p>
+        <button class="border rounded-lg px-10 py-4 bg-green-600 text-white font-bold">SAIBA MAIS</button>
+      </div>
+      <div class="flex flex-col justify-items-start bg-blue-100 p-4 rounded-lg">
+        <img src="./assets/1.png" alt="" class="rounded-lg mb-2">
+        <p class="font-bold text-2xl mb-2">Chuteira X</p>
+        <p class="font-bold text-2xl mb-6">Marca Y</p>
+        <button class="border rounded-lg px-10 py-4 bg-green-600 text-white font-bold">SAIBA MAIS</button>
+      </div>
+      <div class="flex flex-col justify-items-start bg-blue-100 p-4 rounded-lg">
+        <img src="./assets/1.png" alt="" class="rounded-lg mb-2">
+        <p class="font-bold text-2xl mb-2">Chuteira X</p>
+        <p class="font-bold text-2xl mb-6">Marca Y</p>
+        <button class="border rounded-lg px-10 py-4 bg-green-600 text-white font-bold">SAIBA MAIS</button>
+      </div>
+      <div class="flex flex-col justify-items-start bg-blue-100 p-4 rounded-lg">
+        <img src="./assets/1.png" alt="" class="rounded-lg mb-2">
+        <p class="font-bold text-2xl mb-2">Chuteira X</p>
+        <p class="font-bold text-2xl mb-6">Marca Y</p>
+        <button class="border rounded-lg px-10 py-4 bg-green-600 text-white font-bold">SAIBA MAIS</button>
+      </div>
+      <div class="flex flex-col justify-items-start bg-blue-100 p-4 rounded-lg">
+        <img src="./assets/1.png" alt="" class="rounded-lg mb-2">
+        <p class="font-bold text-2xl mb-2">Chuteira X</p>
+        <p class="font-bold text-2xl mb-6">Marca Y</p>
+        <button class="border rounded-lg px-10 py-4 bg-green-600 text-white font-bold">SAIBA MAIS</button>
+      </div>
+      <div class="flex flex-col justify-items-start bg-blue-100 p-4 rounded-lg">
+        <img src="./assets/1.png" alt="" class="rounded-lg mb-2">
+        <p class="font-bold text-2xl mb-2">Chuteira X</p>
+        <p class="font-bold text-2xl mb-6">Marca Y</p>
+        <button class="border rounded-lg px-10 py-4 bg-green-600 text-white font-bold">SAIBA MAIS</button>
+      </div>
+      <div class="flex flex-col justify-items-start bg-blue-100 p-4 rounded-lg">
+        <img src="./assets/1.png" alt="" class="rounded-lg mb-2">
+        <p class="font-bold text-2xl mb-2">Chuteira X</p>
+        <p class="font-bold text-2xl mb-6">Marca Y</p>
+        <button class="border rounded-lg px-10 py-4 bg-green-600 text-white font-bold">SAIBA MAIS</button>
+      </div>
+      <div class="flex flex-col justify-items-start bg-blue-100 p-4 rounded-lg">
+        <img src="./assets/1.png" alt="" class="rounded-lg mb-2">
+        <p class="font-bold text-2xl mb-2">Chuteira X</p>
+        <p class="font-bold text-2xl mb-6">Marca Y</p>
+        <button class="border rounded-lg px-10 py-4 bg-green-600 text-white font-bold">SAIBA MAIS</button>
+      </div>
+      <div class="flex flex-col justify-items-start bg-blue-100 p-4 rounded-lg">
+        <img src="./assets/1.png" alt="" class="rounded-lg mb-2">
+        <p class="font-bold text-2xl mb-2">Chuteira X</p>
+        <p class="font-bold text-2xl mb-6">Marca Y</p>
+        <button class="border rounded-lg px-10 py-4 bg-green-600 text-white font-bold">SAIBA MAIS</button>
+      </div>
+      <div class="flex flex-col justify-items-start bg-blue-100 p-4 rounded-lg">
+        <img src="./assets/1.png" alt="" class="rounded-lg mb-2">
+        <p class="font-bold text-2xl mb-2">Chuteira X</p>
+        <p class="font-bold text-2xl mb-6">Marca Y</p>
+        <button class="border rounded-lg px-10 py-4 bg-green-600 text-white font-bold">SAIBA MAIS</button>
+      </div>
+
+    </div>
+  </section>
+  <!-- BRANDS AND PRODUCTS SECTION END -->
+
+  <!-- FOOTER START -->
+  <section class="footer flex justify-center bg-slate-300">
+    <div class="flex m-10 gap-8 ">
+      <div class="flex flex-col items-center mr-12">
+        <p class="font-bold text-2xl mb-4">REDES SOCIAIS</p>
+        <div>
+          <a href=""><i class="fa-brands fa-whatsapp pe-3 font-bold text-2xl"></i></a>
+          <a href=""><i class="fa-brands fa-whatsapp pe-3 font-bold text-2xl"></i></a>
+          <a href=""><i class="fa-brands fa-whatsapp pe-3 font-bold text-2xl"></i></a>
+          <a href=""><i class="fa-brands fa-whatsapp pe-3 font-bold text-2xl"></i></a>
+        </div>
+      </div>
+      <div class="flex flex-col items-center mr-12">
+        <p class="font-bold text-2xl mb-4">ENDEREÇO</p>
+        <div>
+          <p class="text-2xl mb-4">Av. Rodrigo Otávio, 1407</p>
+          <p class="text-2xl mb-4">Crespo, Manaus - AM</p>
+          <p class="text-2xl mb-4">CEP: 69073-177</p>
+        </div>
+      </div>
+      <div class="flex flex-col items-center">
+        <p class="font-bold text-2xl mb-4">ATENDIMENTO</p>
+        <div>
+          <a href="">
+            <p class="text-2xl mb-4">Telefone</p>
+          </a>
+          <a href="">
+            <p class="text-2xl mb-4">Whatsapp</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <p class="flex justify-center bg-red-500 p-4 font-bold text-lg">CRIADO E DESENVOLVIDO POR XXX - 2023</p>
+  <!-- FOOTER END -->
 
 </body>
 
-<!-- Adding Js -->
+<!-- Js -->
 <script type="text/javascript" src="./main.js/main.js"></script>
 
 </html>
