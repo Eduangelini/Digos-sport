@@ -1,12 +1,12 @@
 #carousel {
-  max-width: 80%;
+  max-width: 85%;
   margin: 0 auto;
   overflow: hidden;
 }
 
 #carousel__item {
   display: flex;
-  width: 8rem;
+  width: 6rem;
   animation: carousel 100s linear infinite;
 }
 
