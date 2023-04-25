@@ -1,0 +1,19 @@
+#carousel {
+  max-width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#carousel__item {
+  display: flex;
+  width: 8rem;
+  animation: carousel 100s linear infinite;
+}
+
+@keyframes carousel {
+
+  100% {
+    transform: translateX(-2560px);
+  }
+
+}
