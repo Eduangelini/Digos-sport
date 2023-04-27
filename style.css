@@ -11,9 +11,7 @@
 }
 
 @keyframes carousel {
-
   100% {
     transform: translateX(-2560px);
   }
-
 }
