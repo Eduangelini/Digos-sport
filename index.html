@@ -16,6 +16,7 @@
   <!-- CSS -->
   <link rel="stylesheet" href="./tailwind.css">
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./input.css">
 
   <!-- fontAwesome -->
   <script src="https://kit.fontawesome.com/c46e2ab208.js" crossorigin="anonymous"></script>
@@ -35,23 +36,24 @@
   <!-- HEADER START -->
   <header class="">
 
-    <div class="header__nav flex justify-end m-5">
-      <a href="#"><i class="fa-solid fa-bars"></i></a>
+    <div class="header__nav flex justify-end">
+      <a class="flex items-center m-10 text-black text-4xl" href="#"><i class="fa-solid fa-bars"></i></a>
     </div>
 
-    <div class="header__hero flex justify-center gap-10 m-5">
-      <div class="left__content flex flex-col justify-center items-start w-6/12 gap-10">
+    <div class="header__hero flex justify-center gap-10 m-5 max-md:flex-col max-md:items-center max-md:m-3">
+      <div
+        class="left__content flex flex-col justify-center items-start w-6/12 gap-10 max-md:w-auto max-md:items-center">
         <h1 class="font-extrabold text-4xl">Digo`s Sports</h1>
-        <p class="text-base">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti veritatis dignissimos
+        <p class="text-base max-md:text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti
+          veritatis dignissimos
           quos neque minima,
           tempora, optio fugit voluptates odit aspernatur accusantium saepe accusamus autem eligendi. Recusandae nihil
           reprehenderit quod maxime?</p>
-        <button class="border rounded-lg px-10 py-4 bg-green-600 text-white font-bold"><i
-            class="fa-brands fa-whatsapp pe-3 font-bold"></i>ENTRAR EM
+        <button class="main__btn"><i class="fa-brands fa-whatsapp pe-3"></i>ENTRAR EM
           CONTATO</button>
       </div>
       <div class="right__content flex">
-        <img src="./assets/hero-image.png" alt="" width="500px">
+        <img src="./assets/hero-image.png" alt="" width="500px" class="rounded-lg">
       </div>
     </div>
 
@@ -59,31 +61,33 @@
       <div class="border"></div>
     </section>
 
-    <div class="flex flex-col">
-      <ul class="flex justify-center m-5 pb-3">
-        <i class="fa-brands fa-whatsapp flex items-center me-5 font-bold text-3xl"></i>
-        <li class="me-14 text-lg">
-          <p class="font-bold">Frete Grátis</p>
-          <p>Acima de R$XX,XX</p>
+    <div class="header__information flex flex-col">
+      <ul class="flex__center m-5 pb-3 max-md:flex-col">
+        <i class="fa-brands fa-whatsapp information__icon"></i>
+        <li class="me-14 max-md:me-0 information__group">
+          <p class="information__text">Frete Grátis</p>
+          <p class="information__margin">Acima de R$XX,XX</p>
         </li>
-        <i class="fa-brands fa-whatsapp flex items-center me-5 font-bold text-3xl"></i>
-        <li class="me-14 text-lg">
-          <p class="font-bold">Frete Grátis</p>
-          <p>Acima de R$XX,XX</p>
+        <i class="fa-brands fa-whatsapp information__icon"></i>
+        <li class="me-14 max-md:me-0 information__group">
+          <p class="information__text">Frete Grátis</p>
+          <p class="information__margin">Acima de R$XX,XX</p>
         </li>
-        <i class="fa-brands fa-whatsapp flex items-center me-5 font-bold text-3xl"></i>
-        <li class="me-14 text-lg">
-          <p class="font-bold">Frete Grátis</p>
-          <p>Acima de R$XX,XX</p>
+        <i class="fa-brands fa-whatsapp information__icon"></i>
+        <li class="me-14 max-md:me-0 information__group">
+          <p class="information__text">Frete Grátis</p>
+          <p class="information__margin">Acima de R$XX,XX</p>
         </li>
-        <i class="fa-brands fa-whatsapp flex items-center me-5 font-bold text-3xl"></i>
-        <li class="text-lg">
-          <p class="font-bold">Frete Grátis</p>
-          <p>Acima de R$XX,XX</p>
+        <i class="fa-brands fa-whatsapp information__icon"></i>
+        <li class="information__group">
+          <p class="information__text">Frete Grátis</p>
+          <p class="information__margin">Acima de R$XX,XX</p>
         </li>
       </ul>
 
-      <p class="flex justify-center font-bold text-white text-lg bg-slate-300">ENTRE EM CONTATO PARA MAIS INFORMAÇÕES
+      <p
+        class="flex justify-center font-bold text-white text-lg bg-slate-300 max-md:text-center max-md:text-sm max-md:mb-8">
+        ENTRE EM CONTATO PARA MAIS INFORMAÇÕES
       </p>
 
     </div>
@@ -94,34 +98,34 @@
   <main>
 
     <!-- CATEGORIES SECTION START -->
-    <section class="main__categories flex justify-center items-center h-screen">
-      <div class="grid grid-cols-3 gap-4">
-        <div class="flex justify-center items-center">
-          <img src="./assets/1.svg" alt="Imagem 1" class="w-auto h-auto rounded-lg">
+    <section class="main__categories flex__center h-screen max-md:h-max max-md:m-6">
+      <div class="grid grid-cols-3 gap-4 md:max-lg:m-4 max-md:grid-cols-1">
+        <div class="flex__center">
+          <img src="./assets/1.svg" alt="Imagem 1" class="categories__img">
         </div>
-        <div class="flex justify-center items-center">
-          <img src="./assets/2.svg" alt="Imagem 2" class="w-auto h-auto rounded-lg">
+        <div class="flex__center">
+          <img src="./assets/2.svg" alt="Imagem 2" class="categories__img">
         </div>
-        <div class="flex justify-center items-center">
-          <img src="./assets/3.svg" alt="Imagem 3" class="w-auto h-auto rounded-lg">
+        <div class="flex__center">
+          <img src="./assets/3.svg" alt="Imagem 3" class="categories__img">
         </div>
-        <div class="flex justify-center items-center">
-          <img src="./assets/4.svg" alt="Imagem 4" class="w-auto h-auto rounded-lg">
+        <div class="flex__center">
+          <img src="./assets/4.svg" alt="Imagem 4" class="categories__img">
         </div>
-        <div class="flex justify-center items-center">
-          <img src="./assets/5.svg" alt="Imagem 5" class="w-auto h-auto rounded-lg">
+        <div class="flex__center">
+          <img src="./assets/5.svg" alt="Imagem 5" class="categories__img">
         </div>
-        <div class="flex justify-center items-center">
-          <img src="./assets/6.svg" alt="Imagem 6" class="w-auto h-auto rounded-lg">
+        <div class="flex__center">
+          <img src="./assets/6.svg" alt="Imagem 6" class="categories__img">
         </div>
-        <div class="flex justify-center items-center">
-          <img src="./assets/7.svg" alt="Imagem 7" class="w-auto h-auto rounded-lg">
+        <div class="flex__center">
+          <img src="./assets/7.svg" alt="Imagem 7" class="categories__img">
         </div>
-        <div class="flex justify-center items-center">
-          <img src="./assets/8.svg" alt="Imagem 8" class="w-auto h-auto rounded-lg">
+        <div class="flex__center">
+          <img src="./assets/8.svg" alt="Imagem 8" class="categories__img">
         </div>
-        <div class="flex justify-center items-center">
-          <img src="./assets/9.svg" alt="Imagem 9" class="w-auto h-auto rounded-lg">
+        <div class="flex__center">
+          <img src="./assets/9.svg" alt="Imagem 9" class="categories__img">
         </div>
       </div>
     </section>
@@ -129,9 +133,9 @@
 
     <!-- BRANDS AND PRODUCTS SECTION START -->
     <section class="flex flex-col justify-center m-5">
-      <div class="flex justify-center items-center">
+      <div class="flex__center">
         <div class="flex-grow border"></div>
-        <h2 class="m-5 font-bold text-3xl">PRINCIPAIS MARCAS</h2>
+        <h2 class="m-5 font-bold text-3xl max-md:text-center max-md:text-2xl">PRINCIPAIS MARCAS</h2>
         <div class="flex-grow border"></div>
       </div>
     </section>
@@ -143,139 +147,155 @@
         <img src="./assets/brand-mikasa.png" alt="Imagem 3" class=" w-auto h-auto rounded-lg mr-12">
         <img src="./assets/brand-penalty.png" alt="Imagem 4" class=" w-auto h-auto rounded-lg mr-12">
         <img src="./assets/brand-uhlsport.png" alt="Imagem 5" class=" w-auto h-auto rounded-lg mr-12">
-        <img src="./assets/brand-vollo.png" alt="Imagem 1" class=" w-auto h-auto rounded-lg mr-12">
+        <img src="./assets/brand-vollo.png" alt="Imagem 6" class=" w-auto h-auto rounded-lg mr-12">
         <img src="./assets/brand-hammerhead.png" alt="Imagem 1" class=" w-auto h-auto rounded-lg mr-12">
         <img src="./assets/brand-hidrolight.png" alt="Imagem 2" class=" w-auto h-auto rounded-lg mr-12">
         <img src="./assets/brand-mikasa.png" alt="Imagem 3" class=" w-auto h-auto rounded-lg mr-12">
         <img src="./assets/brand-penalty.png" alt="Imagem 4" class=" w-auto h-auto rounded-lg mr-12">
         <img src="./assets/brand-uhlsport.png" alt="Imagem 5" class=" w-auto h-auto rounded-lg mr-12">
-        <img src="./assets/brand-vollo.png" alt="Imagem 1" class=" w-auto h-auto rounded-lg mr-12">
+        <img src="./assets/brand-vollo.png" alt="Imagem 6" class=" w-auto h-auto rounded-lg mr-12">
         <img src="./assets/brand-hammerhead.png" alt="Imagem 1" class=" w-auto h-auto rounded-lg mr-12">
         <img src="./assets/brand-hidrolight.png" alt="Imagem 2" class=" w-auto h-auto rounded-lg mr-12">
         <img src="./assets/brand-mikasa.png" alt="Imagem 3" class=" w-auto h-auto rounded-lg mr-12">
         <img src="./assets/brand-penalty.png" alt="Imagem 4" class=" w-auto h-auto rounded-lg mr-12">
         <img src="./assets/brand-uhlsport.png" alt="Imagem 5" class=" w-auto h-auto rounded-lg mr-12">
-        <img src="./assets/brand-vollo.png" alt="Imagem 1" class=" w-auto h-auto rounded-lg mr-12">
+        <img src="./assets/brand-vollo.png" alt="Imagem 6" class=" w-auto h-auto rounded-lg mr-12">
         <img src="./assets/brand-hammerhead.png" alt="Imagem 1" class=" w-auto h-auto rounded-lg mr-12">
         <img src="./assets/brand-hidrolight.png" alt="Imagem 2" class=" w-auto h-auto rounded-lg mr-12">
         <img src="./assets/brand-mikasa.png" alt="Imagem 3" class=" w-auto h-auto rounded-lg mr-12">
         <img src="./assets/brand-penalty.png" alt="Imagem 4" class=" w-auto h-auto rounded-lg mr-12">
         <img src="./assets/brand-uhlsport.png" alt="Imagem 5" class=" w-auto h-auto rounded-lg mr-12">
-        <img src="./assets/brand-vollo.png" alt="Imagem 1" class=" w-auto h-auto rounded-lg mr-12">
+        <img src="./assets/brand-vollo.png" alt="Imagem 6" class=" w-auto h-auto rounded-lg mr-12">
         <img src="./assets/brand-hammerhead.png" alt="Imagem 1" class=" w-auto h-auto rounded-lg mr-12">
         <img src="./assets/brand-hidrolight.png" alt="Imagem 2" class=" w-auto h-auto rounded-lg mr-12">
         <img src="./assets/brand-mikasa.png" alt="Imagem 3" class=" w-auto h-auto rounded-lg mr-12">
         <img src="./assets/brand-penalty.png" alt="Imagem 4" class=" w-auto h-auto rounded-lg mr-12">
         <img src="./assets/brand-uhlsport.png" alt="Imagem 5" class=" w-auto h-auto rounded-lg mr-12">
-        <img src="./assets/brand-vollo.png" alt="Imagem 1" class=" w-auto h-auto rounded-lg">
+        <img src="./assets/brand-vollo.png" alt="Imagem 6" class=" w-auto h-auto rounded-lg">
       </div>
     </section>
 
     <section class="flex flex-col justify-center m-5">
-      <div class="flex justify-center items-center">
+      <div class="flex__center">
         <div class="flex-grow border"></div>
-        <h2 class="m-5 font-bold text-3xl">PRINCIPAIS PRODUTOS</h2>
+        <h2 class="m-5 font-bold text-3xl max-md:text-center max-md:text-2xl">PRINCIPAIS PRODUTOS</h2>
         <div class="flex-grow border"></div>
       </div>
     </section>
 
-    <section class="main__products flex justify-center items-center m-5 mb-10">
-      <div class="grid grid-cols-4 gap-8 ">
-        <div class="flex flex-col justify-items-start bg-blue-100 p-4 rounded-lg">
-          <img src="./assets/1.png" alt="" class="rounded-lg mb-2">
-          <p class="font-bold text-2xl mb-2">Chuteira X</p>
-          <p class="font-bold text-2xl mb-6">Marca Y</p>
-          <button class="border rounded-lg px-10 py-4 bg-green-600 text-white font-bold">SAIBA MAIS</button>
+    <section class="main__products flex__center m-5 mb-10">
+      <div class="grid grid-cols-4 gap-8 md:max-lg:gap-2 max-md:grid-cols-1">
+        <div class="product__card">
+          <img src="./assets/1.svg" width="200px" alt="" class="product__img">
+          <p class="product__title">Chuteira X</p>
+          <p class="product__brand">Marca Y</p>
+          <button class="main__btn responsive__btn">SAIBA
+            MAIS</button>
         </div>
-        <div class="flex flex-col justify-items-start bg-blue-100 p-4 rounded-lg">
-          <img src="./assets/1.png" alt="" class="rounded-lg mb-2">
-          <p class="font-bold text-2xl mb-2">Chuteira X</p>
-          <p class="font-bold text-2xl mb-6">Marca Y</p>
-          <button class="border rounded-lg px-10 py-4 bg-green-600 text-white font-bold">SAIBA MAIS</button>
+        <div class="product__card">
+          <img src="./assets/1.svg" width="200px" alt="" class="product__img">
+          <p class="product__title">Chuteira X</p>
+          <p class="product__brand">Marca Y</p>
+          <button class="main__btn responsive__btn">SAIBA
+            MAIS</button>
         </div>
-        <div class="flex flex-col justify-items-start bg-blue-100 p-4 rounded-lg">
-          <img src="./assets/1.png" alt="" class="rounded-lg mb-2">
-          <p class="font-bold text-2xl mb-2">Chuteira X</p>
-          <p class="font-bold text-2xl mb-6">Marca Y</p>
-          <button class="border rounded-lg px-10 py-4 bg-green-600 text-white font-bold">SAIBA MAIS</button>
+        <div class="product__card">
+          <img src="./assets/1.svg" width="200px" alt="" class="product__img">
+          <p class="product__title">Chuteira X</p>
+          <p class="product__brand">Marca Y</p>
+          <button class="main__btn responsive__btn">SAIBA
+            MAIS</button>
         </div>
-        <div class="flex flex-col justify-items-start bg-blue-100 p-4 rounded-lg">
-          <img src="./assets/1.png" alt="" class="rounded-lg mb-2">
-          <p class="font-bold text-2xl mb-2">Chuteira X</p>
-          <p class="font-bold text-2xl mb-6">Marca Y</p>
-          <button class="border rounded-lg px-10 py-4 bg-green-600 text-white font-bold">SAIBA MAIS</button>
+        <div class="product__card">
+          <img src="./assets/1.svg" width="200px" alt="" class="product__img">
+          <p class="product__title">Chuteira X</p>
+          <p class="product__brand">Marca Y</p>
+          <button class="main__btn responsive__btn">SAIBA
+            MAIS</button>
         </div>
-        <div class="flex flex-col justify-items-start bg-blue-100 p-4 rounded-lg">
-          <img src="./assets/1.png" alt="" class="rounded-lg mb-2">
-          <p class="font-bold text-2xl mb-2">Chuteira X</p>
-          <p class="font-bold text-2xl mb-6">Marca Y</p>
-          <button class="border rounded-lg px-10 py-4 bg-green-600 text-white font-bold">SAIBA MAIS</button>
+        <div class="product__card">
+          <img src="./assets/1.svg" width="200px" alt="" class="product__img">
+          <p class="product__title">Chuteira X</p>
+          <p class="product__brand">Marca Y</p>
+          <button class="main__btn responsive__btn">SAIBA
+            MAIS</button>
         </div>
-        <div class="flex flex-col justify-items-start bg-blue-100 p-4 rounded-lg">
-          <img src="./assets/1.png" alt="" class="rounded-lg mb-2">
-          <p class="font-bold text-2xl mb-2">Chuteira X</p>
-          <p class="font-bold text-2xl mb-6">Marca Y</p>
-          <button class="border rounded-lg px-10 py-4 bg-green-600 text-white font-bold">SAIBA MAIS</button>
+        <div class="product__card">
+          <img src="./assets/1.svg" width="200px" alt="" class="product__img">
+          <p class="product__title">Chuteira X</p>
+          <p class="product__brand">Marca Y</p>
+          <button class="main__btn responsive__btn">SAIBA
+            MAIS</button>
         </div>
-        <div class="flex flex-col justify-items-start bg-blue-100 p-4 rounded-lg">
-          <img src="./assets/1.png" alt="" class="rounded-lg mb-2">
-          <p class="font-bold text-2xl mb-2">Chuteira X</p>
-          <p class="font-bold text-2xl mb-6">Marca Y</p>
-          <button class="border rounded-lg px-10 py-4 bg-green-600 text-white font-bold">SAIBA MAIS</button>
+        <div class="product__card">
+          <img src="./assets/1.svg" width="200px" alt="" class="product__img">
+          <p class="product__title">Chuteira X</p>
+          <p class="product__brand">Marca Y</p>
+          <button class="main__btn responsive__btn">SAIBA
+            MAIS</button>
         </div>
-        <div class="flex flex-col justify-items-start bg-blue-100 p-4 rounded-lg">
-          <img src="./assets/1.png" alt="" class="rounded-lg mb-2">
-          <p class="font-bold text-2xl mb-2">Chuteira X</p>
-          <p class="font-bold text-2xl mb-6">Marca Y</p>
-          <button class="border rounded-lg px-10 py-4 bg-green-600 text-white font-bold">SAIBA MAIS</button>
+        <div class="product__card">
+          <img src="./assets/1.svg" width="200px" alt="" class="product__img">
+          <p class="product__title">Chuteira X</p>
+          <p class="product__brand">Marca Y</p>
+          <button class="main__btn responsive__btn">SAIBA
+            MAIS</button>
         </div>
-        <div class="flex flex-col justify-items-start bg-blue-100 p-4 rounded-lg">
-          <img src="./assets/1.png" alt="" class="rounded-lg mb-2">
-          <p class="font-bold text-2xl mb-2">Chuteira X</p>
-          <p class="font-bold text-2xl mb-6">Marca Y</p>
-          <button class="border rounded-lg px-10 py-4 bg-green-600 text-white font-bold">SAIBA MAIS</button>
+        <div class="product__card">
+          <img src="./assets/1.svg" width="200px" alt="" class="product__img">
+          <p class="product__title">Chuteira X</p>
+          <p class="product__brand">Marca Y</p>
+          <button class="main__btn responsive__btn">SAIBA
+            MAIS</button>
         </div>
-        <div class="flex flex-col justify-items-start bg-blue-100 p-4 rounded-lg">
-          <img src="./assets/1.png" alt="" class="rounded-lg mb-2">
-          <p class="font-bold text-2xl mb-2">Chuteira X</p>
-          <p class="font-bold text-2xl mb-6">Marca Y</p>
-          <button class="border rounded-lg px-10 py-4 bg-green-600 text-white font-bold">SAIBA MAIS</button>
+        <div class="product__card">
+          <img src="./assets/1.svg" width="200px" alt="" class="product__img">
+          <p class="product__title">Chuteira X</p>
+          <p class="product__brand">Marca Y</p>
+          <button class="main__btn responsive__btn">SAIBA
+            MAIS</button>
         </div>
-        <div class="flex flex-col justify-items-start bg-blue-100 p-4 rounded-lg">
-          <img src="./assets/1.png" alt="" class="rounded-lg mb-2">
-          <p class="font-bold text-2xl mb-2">Chuteira X</p>
-          <p class="font-bold text-2xl mb-6">Marca Y</p>
-          <button class="border rounded-lg px-10 py-4 bg-green-600 text-white font-bold">SAIBA MAIS</button>
+        <div class="product__card">
+          <img src="./assets/1.svg" width="200px" alt="" class="product__img">
+          <p class="product__title">Chuteira X</p>
+          <p class="product__brand">Marca Y</p>
+          <button class="main__btn responsive__btn">SAIBA
+            MAIS</button>
         </div>
-        <div class="flex flex-col justify-items-start bg-blue-100 p-4 rounded-lg">
-          <img src="./assets/1.png" alt="" class="rounded-lg mb-2">
-          <p class="font-bold text-2xl mb-2">Chuteira X</p>
-          <p class="font-bold text-2xl mb-6">Marca Y</p>
-          <button class="border rounded-lg px-10 py-4 bg-green-600 text-white font-bold">SAIBA MAIS</button>
+        <div class="product__card">
+          <img src="./assets/1.svg" width="200px" alt="" class="product__img">
+          <p class="product__title">Chuteira X</p>
+          <p class="product__brand">Marca Y</p>
+          <button class="main__btn responsive__btn">SAIBA
+            MAIS</button>
         </div>
-        <div class="flex flex-col justify-items-start bg-blue-100 p-4 rounded-lg">
-          <img src="./assets/1.png" alt="" class="rounded-lg mb-2">
-          <p class="font-bold text-2xl mb-2">Chuteira X</p>
-          <p class="font-bold text-2xl mb-6">Marca Y</p>
-          <button class="border rounded-lg px-10 py-4 bg-green-600 text-white font-bold">SAIBA MAIS</button>
+        <div class="product__card">
+          <img src="./assets/1.svg" width="200px" alt="" class="product__img">
+          <p class="product__title">Chuteira X</p>
+          <p class="product__brand">Marca Y</p>
+          <button class="main__btn responsive__btn">SAIBA
+            MAIS</button>
         </div>
-        <div class="flex flex-col justify-items-start bg-blue-100 p-4 rounded-lg">
-          <img src="./assets/1.png" alt="" class="rounded-lg mb-2">
-          <p class="font-bold text-2xl mb-2">Chuteira X</p>
-          <p class="font-bold text-2xl mb-6">Marca Y</p>
-          <button class="border rounded-lg px-10 py-4 bg-green-600 text-white font-bold">SAIBA MAIS</button>
+        <div class="product__card">
+          <img src="./assets/1.svg" width="200px" alt="" class="product__img">
+          <p class="product__title">Chuteira X</p>
+          <p class="product__brand">Marca Y</p>
+          <button class="main__btn responsive__btn">SAIBA
+            MAIS</button>
         </div>
-        <div class="flex flex-col justify-items-start bg-blue-100 p-4 rounded-lg">
-          <img src="./assets/1.png" alt="" class="rounded-lg mb-2">
-          <p class="font-bold text-2xl mb-2">Chuteira X</p>
-          <p class="font-bold text-2xl mb-6">Marca Y</p>
-          <button class="border rounded-lg px-10 py-4 bg-green-600 text-white font-bold">SAIBA MAIS</button>
+        <div class="product__card">
+          <img src="./assets/1.svg" width="200px" alt="" class="product__img">
+          <p class="product__title">Chuteira X</p>
+          <p class="product__brand">Marca Y</p>
+          <button class="main__btn responsive__btn">SAIBA
+            MAIS</button>
         </div>
-        <div class="flex flex-col justify-items-start bg-blue-100 p-4 rounded-lg">
-          <img src="./assets/1.png" alt="" class="rounded-lg mb-2">
-          <p class="font-bold text-2xl mb-2">Chuteira X</p>
-          <p class="font-bold text-2xl mb-6">Marca Y</p>
-          <button class="border rounded-lg px-10 py-4 bg-green-600 text-white font-bold">SAIBA MAIS</button>
+        <div class="product__card">
+          <img src="./assets/1.svg" width="200px" alt="" class="product__img">
+          <p class="product__title">Chuteira X</p>
+          <p class="product__brand">Marca Y</p>
+          <button class="main__btn responsive__btn">SAIBA
+            MAIS</button>
         </div>
 
       </div>
@@ -287,43 +307,44 @@
 
   <!-- FOOTER START -->
   <footer class="footer flex justify-center bg-slate-300">
-    <div class="flex m-10 gap-8 ">
-      <div class="flex flex-col items-center mr-12">
-        <p class="font-bold text-2xl mb-4">REDES SOCIAIS</p>
+    <div class="flex m-10 gap-8 max-md:flex-col max-md:gap-4">
+      <div class="flex flex-col items-center mr-12 max-md:mr-0">
+        <p class="font-bold text-2xl mb-4 md:max-lg:text-xl max-md:text-lg ">REDES SOCIAIS</p>
         <div>
-          <a href=""><i class="fa-brands fa-whatsapp pe-3 font-bold text-2xl"></i></a>
-          <a href=""><i class="fa-brands fa-whatsapp pe-3 font-bold text-2xl"></i></a>
-          <a href=""><i class="fa-brands fa-whatsapp pe-3 font-bold text-2xl"></i></a>
-          <a href=""><i class="fa-brands fa-whatsapp pe-3 font-bold text-2xl"></i></a>
+          <a href=""><i class="fa-brands fa-whatsapp pe-3 font-bold text-lg md:max-lg:text-xl max-md:text-sm"></i></a>
+          <a href=""><i class="fa-brands fa-whatsapp pe-3 font-bold text-lg md:max-lg:text-xl max-md:text-sm"></i></a>
+          <a href=""><i class="fa-brands fa-whatsapp pe-3 font-bold text-lg md:max-lg:text-xl max-md:text-sm"></i></a>
+          <a href=""><i class="fa-brands fa-whatsapp pe-3 font-bold text-lg md:max-lg:text-xl max-md:text-sm"></i></a>
         </div>
       </div>
-      <div class="flex flex-col items-center mr-12">
-        <p class="font-bold text-2xl mb-4">ENDEREÇO</p>
+      <div class="flex flex-col items-center mr-12 max-md:mr-0">
+        <p class="font-bold text-2xl mb-4 md:max-lg:text-xl max-md:text-lg">ENDEREÇO</p>
         <div>
-          <p class="text-2xl mb-4">Av. Rodrigo Otávio, 1407</p>
-          <p class="text-2xl mb-4">Crespo, Manaus - AM</p>
-          <p class="text-2xl mb-4">CEP: 69073-177</p>
+          <p class="text-lg mb-4 max-md:text-sm text-center">Av. Rodrigo Otávio,
+            1407</p>
+          <p class="text-lg mb-4 max-md:text-sm text-center">Crespo, Manaus - AM
+          </p>
+          <p class="text-lg mb-4 max-md:text-sm text-center">CEP: 69073-177</p>
         </div>
       </div>
       <div class="flex flex-col items-center">
-        <p class="font-bold text-2xl mb-4">ATENDIMENTO</p>
+        <p class="font-bold text-2xl mb-4 md:max-lg:text-xl max-md:text-lg">ATENDIMENTO</p>
         <div>
           <a href="">
-            <p class="text-2xl mb-4">Telefone</p>
+            <p class="text-lg mb-4 max-md:text-sm text-center">Telefone</p>
           </a>
           <a href="">
-            <p class="text-2xl mb-4">Whatsapp</p>
+            <p class="text-lg mb-4 max-md:text-sm text-center">Whatsapp</p>
           </a>
         </div>
       </div>
     </div>
   </footer>
-  <p class="flex justify-center bg-red-500 p-4 font-bold text-lg">CRIADO E DESENVOLVIDO POR XXX - 2023</p>
+  <p class="flex justify-center bg-red-500 p-4 font-bold text-lg md:max-lg:text-sm max-md:text-sm">CRIADO E DESENVOLVIDO
+    POR XXX - 2023
+  </p>
   <!-- FOOTER END -->
 
 </body>
-
-<!-- Js -->
-<script type="text/javascript" src="./main.js/main.js"></script>
 
 </html>
