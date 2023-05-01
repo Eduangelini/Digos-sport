@@ -36,11 +36,11 @@
   <!-- HEADER START -->
   <header class="">
 
-    <div class="header__nav flex justify-end">
+    <section class="header__nav flex justify-end">
       <a class="flex items-center m-10 text-black text-4xl" href="#"><i class="fa-solid fa-bars"></i></a>
-    </div>
+    </section>
 
-    <div class="header__hero flex justify-center gap-10 m-5 max-md:flex-col max-md:items-center max-md:m-3">
+    <section class="header__hero flex justify-center gap-10 m-5 max-md:flex-col max-md:items-center max-md:m-3">
       <div
         class="left__content flex flex-col justify-center items-start w-6/12 gap-10 max-md:w-auto max-md:items-center">
         <h1 class="font-extrabold text-4xl">Digo`s Sports</h1>
@@ -55,33 +55,37 @@
       <div class="right__content flex">
         <img src="./assets/hero-image.png" alt="" width="500px" class="rounded-lg">
       </div>
-    </div>
+    </section>
 
     <section class="m-5">
       <div class="border"></div>
     </section>
 
-    <div class="header__information flex flex-col">
-      <ul class="flex__center m-5 pb-3 max-md:flex-col">
-        <i class="fa-brands fa-whatsapp information__icon"></i>
-        <li class="me-14 max-md:me-0 information__group">
-          <p class="information__text">Frete Grátis</p>
-          <p class="information__margin">Acima de R$XX,XX</p>
+    <section class="flex flex-col">
+      <ul class="flex__center m-5 pb-3 max-md:grid max-md:grid-cols-2">
+        <li class="flex flex-col justify-center items-center mx-8 text-lg max-md:mx-0 max-md:text-center">
+          <i
+            class="fa-brands fa-whatsapp flex items-center justify-center me-0 font-bold text-3xl md:max-lg:text-2xl max-md:me-0"></i>
+          <p class="font-bold max-md:text-center">Frete Grátis</p>
+          <p class="md:max-lg:text-sm max-md:mb-8">Acima de R$XX,XX</p>
         </li>
-        <i class="fa-brands fa-whatsapp information__icon"></i>
-        <li class="me-14 max-md:me-0 information__group">
-          <p class="information__text">Frete Grátis</p>
-          <p class="information__margin">Acima de R$XX,XX</p>
+        <li class="flex flex-col justify-center items-center mx-8 text-lg max-md:mx-0 max-md:text-center">
+          <i
+            class="fa-brands fa-whatsapp flex items-center justify-center me-0 font-bold text-3xl md:max-lg:text-2xl max-md:me-0"></i>
+          <p class="font-bold max-md:text-center">Frete Grátis</p>
+          <p class="md:max-lg:text-sm max-md:mb-8">Acima de R$XX,XX</p>
         </li>
-        <i class="fa-brands fa-whatsapp information__icon"></i>
-        <li class="me-14 max-md:me-0 information__group">
-          <p class="information__text">Frete Grátis</p>
-          <p class="information__margin">Acima de R$XX,XX</p>
+        <li class="flex flex-col justify-center items-center mx-8 text-lg max-md:mx-0 max-md:text-center">
+          <i
+            class="fa-brands fa-whatsapp flex items-center justify-center me-0 font-bold text-3xl md:max-lg:text-2xl max-md:me-0"></i>
+          <p class="font-bold max-md:text-center">Frete Grátis</p>
+          <p class="md:max-lg:text-sm max-md:mb-8">Acima de R$XX,XX</p>
         </li>
-        <i class="fa-brands fa-whatsapp information__icon"></i>
-        <li class="information__group">
-          <p class="information__text">Frete Grátis</p>
-          <p class="information__margin">Acima de R$XX,XX</p>
+        <li class="flex flex-col justify-center items-center mx-8 text-lg max-md:mx-0 max-md:text-center">
+          <i
+            class="fa-brands fa-whatsapp flex items-center justify-center me-0 font-bold text-3xl md:max-lg:text-2xl max-md:me-0"></i>
+          <p class="font-bold max-md:text-center">Frete Grátis</p>
+          <p class="md:max-lg:text-sm max-md:mb-8">Acima de R$XX,XX</p>
         </li>
       </ul>
 
@@ -90,7 +94,7 @@
         ENTRE EM CONTATO PARA MAIS INFORMAÇÕES
       </p>
 
-    </div>
+    </section>
   </header>
   <!-- HEADER END -->
 
@@ -132,7 +136,7 @@
     <!-- CATEGORIES SECTION END -->
 
     <!-- BRANDS AND PRODUCTS SECTION START -->
-    <section class="flex flex-col justify-center m-5">
+    <section class="border__section">
       <div class="flex__center">
         <div class="flex-grow border"></div>
         <h2 class="m-5 font-bold text-3xl max-md:text-center max-md:text-2xl">PRINCIPAIS MARCAS</h2>
@@ -175,7 +179,7 @@
       </div>
     </section>
 
-    <section class="flex flex-col justify-center m-5">
+    <section class="border__section">
       <div class="flex__center">
         <div class="flex-grow border"></div>
         <h2 class="m-5 font-bold text-3xl max-md:text-center max-md:text-2xl">PRINCIPAIS PRODUTOS</h2>
@@ -184,7 +188,7 @@
     </section>
 
     <section class="main__products flex__center m-5 mb-10">
-      <div class="grid grid-cols-4 gap-8 md:max-lg:gap-2 max-md:grid-cols-1">
+      <div class="grid grid-cols-4 gap-8 md:max-lg:gap-2 max-md:grid-cols-2">
         <div class="product__card">
           <img src="./assets/1.svg" width="200px" alt="" class="product__img">
           <p class="product__title">Chuteira X</p>

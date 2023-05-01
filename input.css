@@ -5,14 +5,15 @@
 /* Button configuration */
 
 .main__btn {
-  @apply border rounded-lg px-10 py-4 bg-green-600 text-white font-medium  hover:bg-green-800;
+  @apply border rounded-lg px-10 py-4 bg-green-600 text-white font-medium hover: bg-green-800;
 }
 
 .responsive__btn {
-  @apply md:max-lg:px-4 md:max-lg:py-3 md:max-lg:text-sm;
+  @apply md: max-lg:py-4 md:max-lg:text-sm md:max-lg:px-4;
 }
 
 /* Product card configuration */
+
 .product__card {
   @apply flex flex-col justify-items-start bg-blue-100 p-4 rounded-lg;
 }
@@ -26,7 +27,7 @@
 }
 
 .product__brand {
-  @apply font-medium text-lg mb-6 md:max-lg:text-base;
+  @apply font-medium text-lg mb-6 md: max-lg:text-base;
 }
 
 /* Flex center */
@@ -35,40 +36,16 @@
   @apply flex justify-center items-center;
 }
 
-.information__icon {
-  @apply flex items-center justify-center me-5 font-medium text-3xl md:max-lg:text-2xl max-md:me-0;
-}
-
-.information__group {
-  @apply text-lg md:max-lg:text-sm max-md:text-center;
-}
-
-.information__text {
-  @apply font-bold max-md:text-center;
-}
-
-.information__margin {
-  @apply max-md:mb-8;
-}
-
 /* Categories configuration */
 
 .categories__img {
   @apply w-auto h-auto rounded-lg;
 }
 
+/* ---------------------------------------------- */
+
 /* Border configuration */
 
 .border__section {
   @apply flex flex-col justify-center m-5;
-}
-
-.border__line {
-  @apply flex-grow border;
-}
-
-/* Carousel configuration */
-
-.carousel__img {
-  @apply w-auto h-auto rounded-lg mr-12;
 }
