@@ -663,7 +663,7 @@ produtos.forEach(produto => {
                   </div>
                   <p class="mb-1 px-4">R$${precoPix} no Pix ou Boleto</p>
                   <p class="font-thin text-sm mb-4 px-4">ou R$${produto.precoCartao.toFixed(2)} no cartão de crédito</p>
-                  <a class="cursor-pointer text-center pointer border mx-4 mb-4 rounded-lg px-10 py-4 bg-green-600 text-white font-medium hover:bg-green-800 md:max-lg:px-4 max-sm:px-1" href="https://api.whatsapp.com/send?phone=5561996131441&text=Gostaria%20de%20saber%20mais%20sobre%20${produto.titulo}." target="_blank">SAIBA MAIS</a>
+                  <a class="cursor-pointer text-center pointer border mx-4 mb-4 rounded-lg px-10 py-4 bg-green-600 text-white font-medium hover:bg-green-800 md:max-lg:px-4 max-sm:px-1" href="https://api.whatsapp.com/send?phone=5592981712933&text=Gostaria%20de%20saber%20mais%20sobre%20${produto.titulo}." target="_blank">SAIBA MAIS</a>
                 </div>
               `;
   produtosContainer.insertAdjacentHTML('beforeend', produtoHtml);
